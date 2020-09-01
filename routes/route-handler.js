@@ -17,9 +17,9 @@ router.get('/contact', function(req, res){
     res.render('contact');
 })
 
-// router.get('/services', function(req, res){
-//     res.render('services');
-// })
+router.get('/schedule', function(req, res){
+    res.render('schedule');
+})
 
 router.get('/services/lean-six-sigma-training', function(req, res){
     res.render('services/lean-six-sigma-training');
