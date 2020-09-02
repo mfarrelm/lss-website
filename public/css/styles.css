@@ -2048,7 +2048,7 @@ section {
       }
       
       .right-calendar {
-        border-width: 3.7px 5px 3.7px 0;
+        border-width: 3.7px 0 3.7px 5px;
         border-color: transparent transparent transparent rgba(160, 159, 160, 1);
         right: 20px;
       }
