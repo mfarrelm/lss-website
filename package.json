@@ -9,6 +9,8 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.17.1",
-    "express3-handlebars": "^0.5.2"
+    "express3-handlebars": "^0.5.2",
+    "nodemailer": "^6.4.11",
+    "nodemailer-mailgun-transport": "^2.0.0"
   }
 }
