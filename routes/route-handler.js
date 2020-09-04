@@ -5,6 +5,7 @@ router.get('/', function (req, res) {
     res.render('home');
 });
 
+//------------------------------- Page Utama-----------------------------
 router.get('/profile', function (req, res) {
     res.render('profile');
 });
@@ -17,10 +18,11 @@ router.get('/contact', function(req, res){
     res.render('contact');
 })
 
-router.get('/schedule', function(req, res){
-    res.render('schedule');
+router.get('/events', function(req, res){
+    res.render('events');
 })
 
+//------------------------------- Page Services-----------------------------
 router.get('/services/lean-six-sigma-training', function(req, res){
     res.render('services/lean-six-sigma-training');
 })
@@ -64,6 +66,28 @@ router.get('/services/operation-management-training', function(req, res){
     res.render('services/operation-management-training');
 })
 
+router.get('/services/mastering-7-quality-tools', function(req, res){
+    res.render('services/mastering-7-quality-tools');
+})
+
+router.get('/services/value-stream-mapping', function(req, res){
+    res.render('services/value-stream-mapping');
+})
+
+
+//------------------------------- Page Lean six sigma training-----------------------------
+router.get('/services/lean-six-sigma-training/lean-six-sigma-yellow-belt', function(req, res){
+    res.render('services/lean-six-sigma-training/lean-six-sigma-yellow-belt');
+})
+
+
+router.get('/services/lean-six-sigma-training/lean-six-sigma-green-belt', function(req, res){
+    res.render('services/lean-six-sigma-training/lean-six-sigma-green-belt');
+})
+
+router.get('/services/lean-six-sigma-training/lean-six-sigma-white-belt', function(req, res){
+    res.render('services/lean-six-sigma-training/lean-six-sigma-white-belt');
+})
 
 
 module.exports = router;

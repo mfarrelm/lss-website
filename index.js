@@ -18,7 +18,7 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 app.post('/email', (req, res) =>{
-    console.log('Data: ', req.body);
+    // console.log('Data: ', req.body);
     const {name, email, subject, message} = req.body;
     sendMail(name, email, subject, message, function(err, data){
         if(err){
